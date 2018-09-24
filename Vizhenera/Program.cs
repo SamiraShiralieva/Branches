@@ -96,12 +96,10 @@ namespace Vizhenera
                 }
                 Console.WriteLine("Строка зашифрована: " + result);
                 s = result;
+              
                 for (int i = 0; i < s.Length; i++)
                 {
                     key_on_s += key[i % key.Length];
-                }
-                for (int i = 0; i < s.Length; i++)
-                {
                     if (((int)(s[i]) < 1040) || ((int)(s[i]) > 1103))
                         result1 += s[i];
                     else
