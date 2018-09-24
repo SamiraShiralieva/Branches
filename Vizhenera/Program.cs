@@ -27,8 +27,8 @@ namespace Vizhenera
                     for (int j = 0; j < 32; j++)
                     {
                         shift = j + i;
-                        if (shift > 33)
-                            shift = shift % 32 + 0;
+                        if (shift >= 32)
+                            shift = shift % 32;
                         tabula_recta[i, j] = alfabet[shift];
                     }
                 Console.Write("Введите ключ шифра: ");
@@ -46,13 +46,10 @@ namespace Vizhenera
                         Console.WriteLine("Ошибка");
                 }
                 Console.Write("Введите строку для шифрования: ");
-                s = Console.ReadLine();
+                s = Console.ReadLine();   
                 for (int i = 0; i < s.Length; i++)
                 {
                     key_on_s += key[i % key.Length];
-                }
-                for (int i = 0; i < s.Length; i++)
-                {
                     if (((int)(s[i]) < 1040) || ((int)(s[i]) > 1103))
                         result += s[i];
                     else
@@ -101,9 +98,6 @@ namespace Vizhenera
                 for (int i = 0; i < s.Length; i++)
                 {
                     key_on_s += key[i % key.Length];
-                }
-                for (int i = 0; i < s.Length; i++)
-                {
                     if (((int)(s[i]) < 1040) || ((int)(s[i]) > 1103))
                         result1 += s[i];
                     else
