@@ -45,6 +45,9 @@ namespace Vizhenera
                     if (flag == false)
                         Console.WriteLine("Ошибка");
                 }
+				
+				Console.WriteLine("revert: ");
+				
                 Console.Write("Введите строку для шифрования: ");
                 s = Console.ReadLine();
                
