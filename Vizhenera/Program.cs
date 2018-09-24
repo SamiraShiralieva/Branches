@@ -27,7 +27,7 @@ namespace Vizhenera
                     for (int j = 0; j < 32; j++)
                     {
                         shift = j + i;
-                        if (shift >= 32)
+                        if (shift > 33)
                             shift = shift % 32 + 0;
                         tabula_recta[i, j] = alfabet[shift];
                     }
