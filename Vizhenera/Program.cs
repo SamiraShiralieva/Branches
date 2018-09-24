@@ -47,7 +47,6 @@ namespace Vizhenera
                 }
 				
 				Console.WriteLine("revert: ");
-				Console.WriteLine("cherry-pick: ");
 				
                 Console.Write("Введите строку для шифрования: ");
                 s = Console.ReadLine();
